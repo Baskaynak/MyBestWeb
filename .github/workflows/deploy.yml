@@ -17,7 +17,7 @@ jobs:
 
     - name: dotnet publish
       # Projeyi derleyip paketliyoruz
-      run: dotnet publish MyBestWeb/MyBestWeb.csproj -c Release -r linux-x64 --self-contained true -o ./publish
+      run: dotnet publish BasicWeb.csproj -c Release -r linux-x64 --self-contained true -o ./publish
 
     - name: Deploy to Azure
       uses: azure/webapps-deploy@v3
